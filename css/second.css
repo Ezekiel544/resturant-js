@@ -1,0 +1,101 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensure everything is vertically aligned */
+    text-align: center; /* Center text content */
+  }
+  
+  /* Cart container */
+  .cart-container {
+    width: 100%;
+    max-width: 900px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease-out;
+    text-align: center; /* Center text inside the container */
+  }
+  
+  .cart-container:hover {
+    transform: translateY(0);
+  }
+  
+  /* Cart items list styling */
+  .cart-items {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background-color: #fafafa;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Item details styling */
+  .item-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .item-price, .item-quantity, .item-total {
+    color: #666;
+  }
+  
+  /* Cart total styling */
+  .cart-total {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Total amount with special color */
+  .cart-total strong {
+    color: #4caf50;
+  }
+  
+  /* Back button styling */
+  #backButton {
+    margin-top: 30px; /* Adds space above the button */
+    padding: 12px 25px; /* Adjust button size */
+    font-size: 18px; /* Button text size */
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+    width: 100%; /* Width set to 50% for centering */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+  }
+  
+  #backButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  

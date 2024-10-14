@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple House Template</title>
+    <link href="./css/style.css" rel="stylesheet" />
+</head>
+
+<body> 
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Cart Icon with Item Count -->
+        <div class="cart-icon">
+            <a href="./second.html">
+                <img src="./icon-removebg-preview.png" alt="Cart">
+                <span id="basket"></span>
+            </a>
+        </div>
+
+        <h1>Kindly place an order</h1>
+        <div style="text-align: center; margin: 20px 10px;">
+        <input type="text" id="enter" placeholder="search food... " style="padding: 8px 50px;" width="1000">
+        <button id="search"  style="color: red;padding: 8px 8px;">search</button>
+    </div>
+        <!-- Menu Section -->
+        <div class="menu-section" id="menu-section">
+            <!-- Menu items will be dynamically inserted here using JavaScript -->
+        </div>
+
+        <!-- Link to Cart Page -->
+        <div class="view-cart">
+            <a href="./second.html">View Cart</a>
+        </div>
+    </div>
+   
+    <!-- External JavaScript -->
+    <script src="./function.js"></script>
+</body>
+
+</html>
